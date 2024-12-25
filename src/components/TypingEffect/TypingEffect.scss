@@ -1,0 +1,24 @@
+.typewriter {
+    font-family: Arial, Helvetica, sans-serif;
+    transform: translateY(-50%);
+}
+
+.typewriter span {
+    color: red;
+    text-transform: uppercase;
+    padding: 10px;
+    border-right: solid red 10px; 
+    animation: cursor 1s ease-in-out infinite;
+}
+
+@keyframes cursor {
+    from { border-color: red; }
+    to { border-color: transparent; }
+}
+
+@media (max-width: 576px) {
+    .typewriter { font-size: 24px; }
+}
+@media (max-width: 768px) {
+    .typewriter { font-size: 36px; }
+}

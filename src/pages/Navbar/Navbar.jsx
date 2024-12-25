@@ -95,7 +95,7 @@ const Navbar = () => {
       {/* Mobile Menu (Initially hidden, slides in/out) */}
       <div
         id="mobile-menu"
-        className={`sm:hidden h-screen fixed left-0 top-0 w-full flex flex-col justify-between transition-transform duration-300 ease-in-out ${
+        className={`sm:hidden h-screen left-0 top-0 w-full flex flex-col justify-between transition-transform duration-300 ease-in-out ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
@@ -116,7 +116,7 @@ const Navbar = () => {
             );
           })}
         </div>
-        <div className="button v1 mb-20">
+        <div className="button v1 mb-36">
           <span className="label">Download</span>
           <span className="icon">
             <span></span>
