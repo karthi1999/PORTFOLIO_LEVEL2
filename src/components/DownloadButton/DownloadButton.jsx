@@ -1,25 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import "./DownloadButton.scss";
 
 const DownloadButton = () => {
-  const [buttonState, setButtonState] = useState("");
 
-  const handleClick = () => {
-    setButtonState("onclic");
-    setTimeout(() => {
-      setButtonState("validate");
-      setTimeout(() => {
-        setButtonState("");
-      }, 1250);
-    }, 2250);
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/Karthi_Babu.pdf';
+    link.download = 'KARTHI_BABU(Resume).pdf';
+    link.click();
   };
 
   return (
     <div className="download-btn">
       <button
         id="button"
-        className={buttonState}
-        onClick={handleClick}
+        onClick={handleDownload}
       ></button>
     </div>
   );

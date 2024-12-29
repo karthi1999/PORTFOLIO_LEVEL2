@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./TypingEffect.scss";
 
-const TypingEffect = () => {
+const TypingEffect = ({ colors }) => {
   const textArr = ["web developer.", "designer.", "freelencer."];
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -37,9 +37,7 @@ const TypingEffect = () => {
   }, [currentText, isDeleting, loopIndex, textArr]);
 
   return (
-      <p className="typewriter">
-        I'm a <span>{currentText}</span>
-      </p>
+    <span className={`typewriter border-r-10 ${colors ? colors : "text-white border-white"}`}>{currentText}</span>
   );
 };
 

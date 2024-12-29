@@ -1,12 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './HamburgerMenu.scss';
 
-const HamburgerMenu = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+const HamburgerMenu = ({ isOpen, toggleMenu }) => {
 
   return (
     <div

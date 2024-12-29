@@ -6,11 +6,13 @@ $gray: #bbbbbb;
     width: 150px;
     height: 45px;
     text-align: center;
+
     @media (max-width: 480px) {
         margin-top: 10px;
         width: 100px;
         height: 30px;
     }
+
     button {
         outline: none;
         height: 40px;
@@ -30,6 +32,7 @@ $gray: #bbbbbb;
         font-weight: bold;
         cursor: pointer;
         transition: all 0.25s ease;
+
         @media (max-width: 480px) {
             font-size: 9px;
             font-weight: bold;
@@ -37,58 +40,17 @@ $gray: #bbbbbb;
             height: 30px;
         }
 
-    &:hover {
-        color: white;
-        background: $green;
-    }
+        &:hover {
+            color: white;
+            background: $green;
+        }
 
-    &:active {
-        letter-spacing: 2px;
-    }
+        &:active {
+            letter-spacing: 2px;
+        }
 
-    &:after {
-        content: "DOWNLOAD CV";
-    }
-    }
-
-    .onclic {
-    width: 40px;
-    border-color: $gray;
-    border-width: 3px;
-    font-size: 0;
-    border-left-color: $green;
-    animation: rotating 2s 0.25s linear infinite;
-
-    &:after {
-        content: "";
-    }
-
-    &:hover {
-        color: $green;
-        background: transparent;
-    }
-    }
-
-    .validate {
-        font-size: 13px;
-        color: white;
-        background: $green;
-
-    &:after {
-        font-family: "Font Awesome 5 Free"; /* Ensure correct font-family */
-        font-weight: 900; /* FontAwesome icons may require font-weight 900 */
-        content: "\f00c"; /* Unicode for the check icon */
-    }
-    }
-
-    @keyframes rotating {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+        &:after {
+            content: "DOWNLOAD CV";
+        }
     }
 }
-
-

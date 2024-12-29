@@ -27,7 +27,7 @@ const VideoWithFallback = () => {
         </video>
       ) : (
         <img
-          src="vide-1-img.png"
+          src="video-1-img.png"
           alt="Fallback"
           className="block w-full"
         />

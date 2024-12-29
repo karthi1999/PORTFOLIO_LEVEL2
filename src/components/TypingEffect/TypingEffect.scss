@@ -1,24 +1,44 @@
 .typewriter {
-    font-family: Arial, Helvetica, sans-serif;
     transform: translateY(-50%);
+    margin-top: 28px;
+
+    @media (max-width: 576px) {
+        margin-top: 14px;
+    }
+
+    @media (max-width: 768px) {
+        margin-top: 12px;
+    }
 }
 
-.typewriter span {
-    color: red;
+.typewriter {
     text-transform: uppercase;
     padding: 10px;
-    border-right: solid red 10px; 
     animation: cursor 1s ease-in-out infinite;
+
+    @media (max-width: 768px) {
+        padding: 5px;
+    }
 }
 
 @keyframes cursor {
-    from { border-color: red; }
-    to { border-color: transparent; }
+    from {
+        border-color: red;
+    }
+
+    to {
+        border-color: transparent;
+    }
 }
 
 @media (max-width: 576px) {
-    .typewriter { font-size: 24px; }
+    .typewriter {
+        font-size: 24px;
+    }
 }
+
 @media (max-width: 768px) {
-    .typewriter { font-size: 36px; }
+    .typewriter {
+        font-size: 36px;
+    }
 }

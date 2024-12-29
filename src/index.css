@@ -2,10 +2,108 @@
   padding: 0%;
   margin: 0%;
   box-sizing: content-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   width: 100vw;
   height: 100vh;
   background-color: white;
+  overflow-x: hidden;
+  scrollbar-width: thin
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in-animation {
+  opacity: 0;
+  /* Initial state */
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+@keyframes bottomToTop {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes topToBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes leftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes rightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-bottom-to-top {
+  opacity: 0;
+  /* Initial state */
+  animation: bottomToTop 0.7s ease-out forwards;
+}
+
+.animate-top-to-bottom {
+  opacity: 0;
+  /* Initial state */
+  animation: topToBottom 0.7s ease-out forwards;
+  animation-delay: 0.5s;
+  /* Delay for second animation */
+}
+
+.animate-left-to-right {
+  opacity: 0;
+  /* Initial state */
+  animation: leftToRight 0.7s ease-out forwards;
+}
+
+.animate-right-to-left {
+  opacity: 0;
+  /* Initial state */
+  animation: rightToLeft 0.7s ease-out forwards;
+  animation-delay: 0.5s;
+  /* Optional delay for staggered animation */
 }
